@@ -22,7 +22,7 @@
             echo "Usuário cadastrado com sucesso!";
         } else 
         {
-            echo "erro ao cadastrar usuário";
+            echo "Erro: " . mysqli_error($conexao);
         }
     }
 
