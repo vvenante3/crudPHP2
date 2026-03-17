@@ -4,8 +4,8 @@
 
     if(isset($_POST['nome']) && isset($_POST['email'])) {
         
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
+        $nome = mysqli_real_escape_string($_POST['nome']);      // escapa de strings perigosos
+        $email = mysqli_real_escape_string($_POST['email']);
 
         // 2 etapas do CREATE
         // 1ª etapa: Montar a Query
