@@ -57,7 +57,7 @@
 
                     <td><a href="editar.php?id=<?=$usuario['id']?>">Editar</a></td>
                     <td><a href="delete.php?id=<?=$usuario['id']?>"
-                    onclick="retur confirm('Tem certeza que deseja excluir esse manolo?')">
+                    onclick="return confirm('Tem certeza que deseja excluir esse manolo?')">
                     Excluir</a></td>
                 </tr>
         <?php } ?>
