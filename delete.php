@@ -13,7 +13,7 @@
         $resultado = mysqli_query($conexao, $sql_delete);
         
         // voltar pra listar.php
-        header("Location: listar.php");
+        header("Location: listar.php?msg=deletado");
         exit;
     }
 

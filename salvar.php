@@ -16,7 +16,7 @@
         $resultadoQuery = mysqli_query($conexao, $sql_insert);
 
         if($resultadoQuery){
-            echo "Usuário cadastrado com sucesso!";
+            header("Location: listar.php?msg=criado");
         } else 
         {
             echo "Erro: " . mysqli_error($conexao);

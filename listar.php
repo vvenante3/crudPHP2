@@ -1,3 +1,13 @@
+<?php
+
+    $msg = " ";
+
+    if(isset($_GET['msg'])){
+        $msg = $_GET['msg'];
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,7 +29,17 @@
     ?>
 
 <body>
-    
+
+    <?php if($msg == "criado"){ ?>
+        <p>Usuário criado com sucesso!</p>
+    <?php } ?>
+    <?php if($msg == "editado"){ ?>
+        <p>Usuário editado com sucesso!</p>
+    <?php } ?>
+    <?php if($msg == "deletado"){ ?>
+        <p>Usuário deletado com sucesso!</p>
+    <?php } ?>
+        
     <h2>Usuários Cadastrados</h2>
 
     <table border="1">

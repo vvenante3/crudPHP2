@@ -13,7 +13,7 @@
         // executar a Query
         $resultado = mysqli_query($conexao, $sql_update);
 
-        header("Location: listar.php");
+        header("Location: listar.php?msg=editado");
         exit;
 
     }
