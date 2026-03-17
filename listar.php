@@ -35,7 +35,7 @@
                     <td> <?= $usuario['nome']?> </td>
                     <td> <?= $usuario['email']?> </td>
 
-                    <!-- <td><a href="">Editar</a></td> -->
+                    <td><a href="editar.php?id=<?=$usuario['id']?>">Editar</a></td>
                     <td><a href="delete.php?id=<?=$usuario['id']?>">Excluir</a></td>
                 </tr>
         <?php } ?>
